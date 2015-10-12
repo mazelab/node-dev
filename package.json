@@ -1,15 +1,18 @@
 {
-  "name": "node-helloworld",
+  "name": "node-dev",
   "version": "1.0.0",
-  "description": "nodejs hello world example",
-  "main": "index.js",
+  "description": "nodejs dev hello world example with mazehall",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "./node_modules/.bin/forever --minUptime 1000 --spinSleepTime 1000 -w server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "marcel kilian <marcel.kilian@mazehall.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "forever": "^0.15.1",
+    "mazehall": "^2.1.0",
+    "serve-static": "^1.10.0"
   }
 }
