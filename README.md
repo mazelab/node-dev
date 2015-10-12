@@ -46,3 +46,8 @@ docker-compose.yml
       ports:
         - 3000:3000
       command: sh -c 'cd /app && npm start'
+      
+      
+## Notes
+
+- Watching File changes over mounts might not always work (eg. Virtual Box)
