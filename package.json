@@ -1,0 +1,15 @@
+{
+  "name": "node-helloworld",
+  "version": "1.0.0",
+  "description": "nodejs hello world example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marcel kilian <marcel.kilian@mazehall.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
