@@ -5,9 +5,16 @@
   "main": "server.js",
   "scripts": {
     "start": "./node_modules/.bin/forever --minUptime 1000 --spinSleepTime 1000 -w server.js",
+    "start-dockerized": "./node_modules/.bin/forever --minUptime 1000 --spinSleepTime 1000 server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "marcel kilian <marcel.kilian@mazehall.com>",
+  "contributors": [
+    {
+      "name": "jens klose",
+      "email": "jens.klose@mazehall.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.3",

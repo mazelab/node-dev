@@ -35,19 +35,19 @@ The npm module forever watches all files for changes and then restarts the serve
 
 ## Docker support
 
-    docker run -d -p 3000:3000 -v myApp:/app node:4.1.2-slim sh -c 'cd /app && npm start' 
+    docker run -d -p 3000:3000 -v .:/app node:5-slim sh -c 'cd /app && npm run start-dockerized' 
 
 docker-compose.yml
 
     dev:
-      image: node:4.1.2-slim
+      image: node:5-slim
       volumes:
-        - myApp:/app
+        - /path/to/myApp:/app
       ports:
         - 3000:3000
-      command: sh -c 'cd /app && npm start'
+      command: sh -c 'cd /app && npm run start-dockerized'
       
       
 ## Notes
 
-- Watching File changes over mounts might not always work (eg. Virtual Box)
+- Watching File changes over mounts might not always work (eg. Virtual Box) or eat your CPU.
